@@ -1,0 +1,559 @@
+PS D:\My Documents\belhard\py90\hw\X\1\pr1> py -m venv .venv                                                                                                        
+PS D:\My Documents\belhard\py90\hw\X\1\pr1> cd .venv\scripts
+PS D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts> dir
+
+
+    Directory: D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          12.02.26     20:38           2210 activate
+-a----          12.02.26     20:38           1023 activate.bat
+-a----          12.02.26     20:38           2282 activate.fish
+-a----          03.02.26     17:33           9031 Activate.ps1
+-a----          03.02.26     17:31            393 deactivate.bat
+-a----          12.02.26     20:38         108396 pip.exe
+-a----          12.02.26     20:38         108396 pip3.14.exe
+-a----          12.02.26     20:38         108396 pip3.exe
+-a----          03.02.26     17:32         255320 python.exe
+-a----          03.02.26     17:32         251736 pythonw.exe
+
+
+PS D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts> activate.ps1
+activate.ps1 : Имя "activate.ps1" не распознано как имя командлета, функции, файла сценария или выполняемой программы. Проверьте правильность написания имени, а также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ activate.ps1
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (activate.ps1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+Suggestion [3,General]: Команда activate.ps1 не найдена, однако существует в текущем расположении. По умолчанию оболочка Windows PowerShell не загружает команды из текущего расположения. Если вы уверены в надежности команды, введите ".\activate.ps1". Для получения дополнительных сведений вызовите справку с помощью команды "get-help about_Command_Precedence".
+PS D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts>                       
+PS D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts> cmd        
+Microsoft Windows [Version 10.0.19044.1469]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts>activate.bat
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\scripts>cd ..
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1\.venv>cd ..
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip
+
+Usage:
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  lock                        Generate a lock file.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  inspect                     Inspect the python environment.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --debug                     Let unhandled exceptions propagate outside the main subroutine, instead of logging them to stderr.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  --require-virtualenv        Allow pip to only run in a virtual environment; exit with an error otherwise.
+  --python <python>           Run pip with the specified Python interpreter.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --keyring-provider <keyring_provider>
+                              Enable the credential lookup via the keyring library if user input is allowed. Specify which mechanism to use [auto, disabled, import, subprocess]. (default: auto)
+  --proxy <proxy>             Specify a proxy in the form scheme://[user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum attempts to establish a new HTTP connection. (default: 5)
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL Certificate Verification' in pip documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+  --resume-retries <resume_retries>
+                              Maximum attempts to resume or restart an incomplete download. (default: 5)
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install request
+ERROR: Could not find a version that satisfies the requirement request (from versions: none)
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+ERROR: No matching distribution found for request
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages (25.3)
+Collecting pip
+  Downloading pip-26.0.1-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 12.4 MB/s  0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.3
+    Uninstalling pip-25.3:
+      Successfully uninstalled pip-25.3
+Successfully installed pip-26.0.1
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install request
+ERROR: Could not find a version that satisfies the requirement request (from versions: none)
+ERROR: No matching distribution found for request
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install requests
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests)
+  Downloading charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl.metadata (38 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests)
+  Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests)
+  Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl (107 kB)
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+Installing collected packages: urllib3, idna, charset_normalizer, certifi, requests
+Successfully installed certifi-2026.1.4 charset_normalizer-3.4.4 idna-3.11 requests-2.32.5 urllib3-2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list            
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+pip                26.0.1
+requests           2.32.5
+urllib3            2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install pipdeptree
+Collecting pipdeptree
+  Downloading pipdeptree-2.30.0-py3-none-any.whl.metadata (15 kB)
+Collecting packaging>=25 (from pipdeptree)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: pip>=25.2 in .\.venv\Lib\site-packages (from pipdeptree) (26.0.1)
+Downloading pipdeptree-2.30.0-py3-none-any.whl (34 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+Installing collected packages: packaging, pipdeptree
+Successfully installed packaging-26.0 pipdeptree-2.30.0
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install pip-autoremove
+Collecting pip-autoremove
+  Downloading pip_autoremove-0.10.0-py2.py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (from pip-autoremove) (26.0.1)
+Collecting setuptools (from pip-autoremove)
+  Downloading setuptools-82.0.0-py3-none-any.whl.metadata (6.6 kB)
+Downloading pip_autoremove-0.10.0-py2.py3-none-any.whl (5.0 kB)
+Downloading setuptools-82.0.0-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 8.9 MB/s  0:00:00
+Installing collected packages: setuptools, pip-autoremove
+Successfully installed pip-autoremove-0.10.0 setuptools-82.0.0
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list                   
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+requests           2.32.5
+setuptools         82.0.0
+urllib3            2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list > requirements.txt
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pipdeptree
+pip-autoremove==0.10.0
+├── pip [required: Any, installed: 26.0.1]
+└── setuptools [required: Any, installed: 82.0.0]
+pipdeptree==2.30.0
+├── packaging [required: >=25, installed: 26.0]
+└── pip [required: >=25.2, installed: 26.0.1]
+requests==2.32.5
+├── charset-normalizer [required: >=2,<4, installed: 3.4.4]
+├── idna [required: >=2.5,<4, installed: 3.11]
+├── urllib3 [required: >=1.21.1,<3, installed: 2.6.3]
+└── certifi [required: >=2017.4.17, installed: 2026.1.4]
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+requests           2.32.5
+setuptools         82.0.0
+urllib3            2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip 
+
+Usage:
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  lock                        Generate a lock file.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  inspect                     Inspect the python environment.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --debug                     Let unhandled exceptions propagate outside the main subroutine, instead of logging them to stderr.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  --require-virtualenv        Allow pip to only run in a virtual environment; exit with an error otherwise.
+  --python <python>           Run pip with the specified Python interpreter.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --keyring-provider <keyring_provider>
+                              Enable the credential lookup via the keyring library if user input is allowed. Specify which mechanism to use [auto, disabled, import, subprocess]. (default: auto)
+  --proxy <proxy>             Specify a proxy in the form scheme://[user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum attempts to establish a new HTTP connection. (default: 5)
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL Certificate Verification' in pip documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+  --resume-retries <resume_retries>
+                              Maximum attempts to resume or restart an incomplete download. (default: 5)
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip uninstall requests     
+Found existing installation: requests 2.32.5
+Uninstalling requests-2.32.5:
+  Would remove:
+    d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages\requests-2.32.5.dist-info\*
+    d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages\requests\*
+Proceed (Y/n)? y
+  Successfully uninstalled requests-2.32.5
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+setuptools         82.0.0
+urllib3            2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install requests       
+Collecting requests
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in .\.venv\Lib\site-packages (from requests) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in .\.venv\Lib\site-packages (from requests) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in .\.venv\Lib\site-packages (from requests) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in .\.venv\Lib\site-packages (from requests) (2026.1.4)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Installing collected packages: requests
+Successfully installed requests-2.32.5
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+requests           2.32.5
+setuptools         82.0.0
+urllib3            2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Scripts\pip-autoremove.exe\__main__.py", line 2, in <module>
+    from pip_autoremove import main
+ModuleNotFoundError: No module named 'pip_autoremove'
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove 
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Scripts\pip-autoremove.exe\__main__.py", line 2, in <module>
+    from pip_autoremove import main
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Lib\site-packages\pip_autoremove.py", line 9, in <module>
+    from pkg_resources import (
+    ...<4 lines>...
+    )
+ModuleNotFoundError: No module named 'pkg_resources'
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install --upgrade setuptools wheel
+Requirement already satisfied: setuptools in .\.venv\Lib\site-packages (82.0.0)
+Collecting wheel
+  Downloading wheel-0.46.3-py3-none-any.whl.metadata (2.4 kB)
+Requirement already satisfied: packaging>=24.0 in .\.venv\Lib\site-packages (from wheel) (26.0)
+Downloading wheel-0.46.3-py3-none-any.whl (30 kB)
+Installing collected packages: wheel
+Successfully installed wheel-0.46.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list       
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+requests           2.32.5
+setuptools         82.0.0
+urllib3            2.6.3
+wheel              0.46.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove 
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Scripts\pip-autoremove.exe\__main__.py", line 2, in <module>
+    from pip_autoremove import main
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Lib\site-packages\pip_autoremove.py", line 9, in <module>
+    from pkg_resources import (
+    ...<4 lines>...
+    )
+ModuleNotFoundError: No module named 'pkg_resources'
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Scripts\pip-autoremove.exe\__main__.py", line 2, in <module>
+    from pip_autoremove import main
+ModuleNotFoundError: No module named 'pip_autoremove'
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip show setuptools
+Name: setuptools
+Version: 82.0.0
+Summary: Easily download, build, install, upgrade, and uninstall Python packages
+Home-page:
+Author:
+Author-email: Python Packaging Authority <distutils-sig@python.org>
+License-Expression: MIT
+Location: D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Lib\site-packages
+Requires:
+Required-by: pip-autoremove
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>python -m pip install --upgrade --force-reinstall setuptools
+Collecting setuptools
+  Using cached setuptools-82.0.0-py3-none-any.whl.metadata (6.6 kB)
+Using cached setuptools-82.0.0-py3-none-any.whl (1.0 MB)
+Installing collected packages: setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 82.0.0
+    Uninstalling setuptools-82.0.0:
+      Successfully uninstalled setuptools-82.0.0
+Successfully installed setuptools-82.0.0
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove      
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Scripts\pip-autoremove.exe\__main__.py", line 2, in <module>
+    from pip_autoremove import main
+  File "D:\My Documents\belhard\py90\hw\X\1\pr1\.venv\Lib\site-packages\pip_autoremove.py", line 9, in <module>
+    from pkg_resources import (
+    ...<4 lines>...
+    )
+ModuleNotFoundError: No module named 'pkg_resources'
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install setuptools==75.1.0
+Collecting setuptools==75.1.0
+  Downloading setuptools-75.1.0-py3-none-any.whl.metadata (6.9 kB)
+Downloading setuptools-75.1.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 9.4 MB/s  0:00:00
+Installing collected packages: setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 82.0.0
+    Uninstalling setuptools-82.0.0:
+      Successfully uninstalled setuptools-82.0.0
+Successfully installed setuptools-75.1.0
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list            
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+requests           2.32.5
+setuptools         75.1.0
+urllib3            2.6.3
+wheel              0.46.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove
+Usage: pip-autoremove [OPTION]... [NAME]...
+
+Options:
+  --version     show program's version number and exit
+  -h, --help    show this help message and exit
+  -l, --list    list unused dependencies, but don't uninstall them.
+  -L, --leaves  list leaves (packages which are not used by any others).
+  -y, --yes     don't ask for confirmation of uninstall deletions.
+  -f, --freeze  list leaves (packages which are not used by any others) in
+                requirements.txt format
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove -h
+Usage: pip-autoremove [OPTION]... [NAME]...
+
+Options:
+  --version     show program's version number and exit
+  -h, --help    show this help message and exit
+  -l, --list    list unused dependencies, but don't uninstall them.
+  -L, --leaves  list leaves (packages which are not used by any others).
+  -y, --yes     don't ask for confirmation of uninstall deletions.
+  -f, --freeze  list leaves (packages which are not used by any others) in
+                requirements.txt format
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip-autoremove requests -y
+requests 2.32.5 (d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages)
+    charset-normalizer 3.4.4 (d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages)
+    idna 3.11 (d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages)
+    urllib3 2.6.3 (d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages)
+    certifi 2026.1.4 (d:\my documents\belhard\py90\hw\x\1\pr1\.venv\lib\site-packages)
+Found existing installation: urllib3 2.6.3
+Uninstalling urllib3-2.6.3:
+  Successfully uninstalled urllib3-2.6.3
+Found existing installation: certifi 2026.1.4
+Uninstalling certifi-2026.1.4:
+  Successfully uninstalled certifi-2026.1.4
+Found existing installation: charset-normalizer 3.4.4
+Uninstalling charset-normalizer-3.4.4:
+  Successfully uninstalled charset-normalizer-3.4.4
+Found existing installation: idna 3.11
+Uninstalling idna-3.11:
+  Successfully uninstalled idna-3.11
+Found existing installation: requests 2.32.5
+Uninstalling requests-2.32.5:
+  Successfully uninstalled requests-2.32.5
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list          
+Package        Version
+-------------- -------
+packaging      26.0
+pip            26.0.1
+pip-autoremove 0.10.0
+pipdeptree     2.30.0
+setuptools     75.1.0
+wheel          0.46.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install -r requirements.txt
+ERROR: Invalid requirement: 'Package            Version': Expected semicolon (after name with no version specifier) or end
+    Package            Version
+                       ^ (from line 1 of requirements.txt)
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip freeze
+packaging==26.0
+pip-autoremove==0.10.0
+pipdeptree==2.30.0
+setuptools==75.1.0
+wheel==0.46.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip install -r requirements.txt
+Collecting certifi==2026.1.4 (from -r requirements.txt (line 1))
+  Using cached certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting charset-normalizer==3.4.4 (from -r requirements.txt (line 2))
+  Using cached charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl.metadata (38 kB)
+Collecting idna==3.11 (from -r requirements.txt (line 3))
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: packaging==26.0 in .\.venv\Lib\site-packages (from -r requirements.txt (line 4)) (26.0)
+Requirement already satisfied: pip==26.0.1 in .\.venv\Lib\site-packages (from -r requirements.txt (line 5)) (26.0.1)
+Requirement already satisfied: pip-autoremove==0.10.0 in .\.venv\Lib\site-packages (from -r requirements.txt (line 6)) (0.10.0)
+Requirement already satisfied: pipdeptree==2.30.0 in .\.venv\Lib\site-packages (from -r requirements.txt (line 7)) (2.30.0)
+Collecting requests==2.32.5 (from -r requirements.txt (line 8))
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting setuptools==82.0.0 (from -r requirements.txt (line 9))
+  Using cached setuptools-82.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting urllib3==2.6.3 (from -r requirements.txt (line 10))
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Using cached certifi-2026.1.4-py3-none-any.whl (152 kB)
+Using cached charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl (107 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Using cached setuptools-82.0.0-py3-none-any.whl (1.0 MB)
+Installing collected packages: urllib3, setuptools, idna, charset-normalizer, certifi, requests
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 75.1.0
+    Uninstalling setuptools-75.1.0:
+      Successfully uninstalled setuptools-75.1.0
+Successfully installed certifi-2026.1.4 charset-normalizer-3.4.4 idna-3.11 requests-2.32.5 setuptools-82.0.0 urllib3-2.6.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>pip list
+Package            Version
+------------------ --------
+certifi            2026.1.4
+charset-normalizer 3.4.4
+idna               3.11
+packaging          26.0
+pip                26.0.1
+pip-autoremove     0.10.0
+pipdeptree         2.30.0
+requests           2.32.5
+setuptools         82.0.0
+urllib3            2.6.3
+wheel              0.46.3
+
+(.venv) D:\My Documents\belhard\py90\hw\X\1\pr1>
