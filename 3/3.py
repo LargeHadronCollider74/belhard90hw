@@ -1,0 +1,5 @@
+p = float(input("input price: "))
+print(f"+30%: {str(round(p * 1.3, 2))}")
+print(f"-5%: {str(round(p * 0.95, 2))}")
+print(f"-10%: {str(round(p * 0.9, 2))}")
+print(f"-15%: {str(round(p * (1 - (15 / 100)), 2))}")

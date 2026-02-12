@@ -1,0 +1,8 @@
+print("query values...")
+v1 = input("value1: ")
+v2 = input("value2: ")
+v3 = input("value3: ")
+print("output values...")
+print(v1, v2, v3)
+print(v1, v2, v3, sep=" : ")
+print("-" + v1, v2, v3, sep="\n-")
