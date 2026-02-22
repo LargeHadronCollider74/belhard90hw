@@ -29,5 +29,6 @@ print("original", *matrix, sep="\n")
 
 print("zip", *list(zip(*matrix)), sep="\n")
 
-print("+90", *list(map(list, zip(*reversed(matrix)))), sep="\n")
-print("-90", *list(map(list, reversed(list(zip(*matrix))))), sep="\n")
+print("+90", *map(list, zip(*reversed(matrix))), sep="\n")
+print("-90", *map(list, reversed(list(zip(*matrix)))), sep="\n")
+print("-90 v2", *map(list, list(zip(*matrix))[::-1]), sep="\n")
