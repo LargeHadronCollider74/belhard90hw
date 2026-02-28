@@ -19,6 +19,8 @@ while True:
 tagret = list()
 for word in original:
     tagret.append("".join(char * i for i, char in enumerate(word, 1)))
+
+# tagret = ["".join(char * i for i, char in enumerate(word, 1)) for word in original]
     
 print(f"Original: {original}")
 print(f"Target: {tagret}")
