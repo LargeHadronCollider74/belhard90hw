@@ -10,3 +10,18 @@
 с помощью try перехватить возможные ошибки.
 '''
 
+def CurrencyFormat(value:float, currencycode:str = "BIN") -> str:
+
+    round_val = str(round(value, 2))
+    amount, rest = "", ""
+   
+    try:
+        amount, rest = round_val.split(".")
+    except:
+        amount = round_val
+        pass
+
+    return f"{" ".join([amount[::-1][i:i+3][::-1] for i in range(0, len(amount), 3)][::-1])}.{rest.zfill(2)} {currencycode}"
+
+print(CurrencyFormat(12245))
+print(CurrencyFormat(1234567.9827634))

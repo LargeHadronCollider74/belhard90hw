@@ -8,6 +8,7 @@
 
 
 """
+
 def ShortName(name:str, revers:bool=False) -> str:
 
     items = list(map(str.capitalize, name.split()))

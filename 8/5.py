@@ -6,3 +6,7 @@
 
 '''
 
+def count_char(word:str):
+    return [{"char": c, "count": word.count(c)} for c in set(word)]
+    
+print(count_char("asdqweaswa"))
