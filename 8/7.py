@@ -21,6 +21,6 @@ def RowInfoView(data:dict) -> str:
            f"Rows count = {data["rows"]}, " \
            f"Sentences count = {data["sentences"]}"
 
-row = "row:str asd q8e9712 sad\nowieur asdaf. lkajsd wqeruy"
+row = "row:str asd q8e\n9712 sad\nowieur asdaf. lkajsd wqeruy"
 row_dict = RowInfoDict(row)
 print(row, row_dict, RowInfoView(row_dict), sep="\n")
